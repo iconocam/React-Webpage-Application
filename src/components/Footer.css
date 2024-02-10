@@ -1,0 +1,17 @@
+footer nav ul {
+list-style: none;
+padding: 0;
+display: flex; 
+justify-content: space-between;
+text-align: center;
+min-height: 100vh;
+    
+}
+
+/* footer nav a {
+    text-decoration: none;
+    color: #fff; 
+} */
+
+
+
