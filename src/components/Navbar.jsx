@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React from "react";
 import navProps from "./navProps";
 import { Link } from "react-router-dom";
 import './Navbar.css'
 
 
-const Navbar = () => {
+const Navbar = ({isLoggedIn}) => {
     const { brandName, imageSrcPath, navItems } = navProps;
     return (
         <nav className ="navbar-container">
@@ -23,14 +23,18 @@ if (typeof item !== 'string') {
 
 return (
     <li key={index}>
-    <a href={`/${item.toLowerCase()}`}>{item}</a>
+    <Link to={`/${item.toLowerCase()}`}>{item}</Link>
     </li>
 );
 })}
-            </ul>
-        </nav>
-    );
-
+{isLoggedIn && (
+        <li>
+            <Link to="/main">Main Page</Link>
+        </li>
+        )}
+    </ul>
+    </nav>
+);
 };
 
 export default Navbar;
