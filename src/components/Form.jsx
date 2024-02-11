@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from 'react-router-dom'
+import './Form.css'
 
 const Form = () => {
     const [email, setEmail] = useState('');

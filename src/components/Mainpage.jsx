@@ -11,12 +11,9 @@ const Mainpage = () => {
         <div className="login-form">
         <Form />
         </div>
-        <section>
-            
-        </section>
         </div>
         
-    )
-}
+    );
+};
 
 export default Mainpage;
