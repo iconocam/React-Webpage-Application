@@ -7,10 +7,15 @@ import './Mainpage.css'
 const Mainpage = () => {
     return (
         <div className="mainpage-container">
+
         <h1 className="mainpage-heading">Apatheia</h1>
+        
         <div className="login-form">
         <Form />
         </div>
+
+        
+
         </div>
         
     );

@@ -11,7 +11,7 @@ import { useState } from 'react';
 import Mainpage from './components/Mainpage';
 
 
-// Mainpage component to be the initial landing page
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -21,7 +21,7 @@ function App() {
     <Navbar />
     <Routes>
     <Route path="/" element={<Mainpage />} />
-    <Route path="/home" element={<Home />} /> {/* Use Home for other routes as needed */}
+    <Route path="/home" element={<Home />} /> 
     <Route path="/about" element={<About />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/community" element={<Community />} />

@@ -1,9 +1,16 @@
 .mainpage-heading {
-    font-size: 45px;
+
     margin-bottom: 20px;
     font-style: italic;
     border-color: black;
-    color:#45a049
+    color:hsla(120, 65%, 3%, 0.932);
+    text-transform:uppercase;
+    text-shadow: 5px 3px 9px rgb(243, 239, 239);
+font-size:26px; letter-spacing:1px;
+/* display: grid; */
+/* grid-template-columns: 1fr auto 1fr; */
+/* grid-template-rows: 16px 0; */
+/* grid-gap: 22px; */
 }
 
 /* .login-form {
@@ -24,6 +31,14 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH78BLNCvb5kbCWeak1HrI2uBaC2ZvH-_dEg&usqp=CAU");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.pointers {
+    margin-left: 95px;
+    /* align-content: center; */
 }
 
 
