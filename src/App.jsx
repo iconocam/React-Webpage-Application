@@ -9,11 +9,11 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css'
 import { useState } from 'react';
 import Mainpage from './components/Mainpage';
-
+import Register from './components/Register';
 
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
 
   return (
     <Router>
@@ -25,7 +25,7 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/community" element={<Community />} />
-      
+    <Route path="/register" element={<Register />} />
     </Routes>
     <Footer />
     </div>
