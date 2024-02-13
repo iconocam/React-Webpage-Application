@@ -10,6 +10,7 @@ import './App.css'
 import { useState } from 'react';
 import Mainpage from './components/Mainpage';
 import Register from './components/Register';
+import MongoData from './components/pokemonPeople';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <Route path="/contact" element={<Contact />} />
     <Route path="/community" element={<Community />} />
     <Route path="/register" element={<Register />} />
+    <Route path="/api/pokemonPeople" element={<MongoData />} />
     </Routes>
     <Footer />
     </div>
