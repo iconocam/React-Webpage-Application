@@ -1,0 +1,54 @@
+.pokeButton {
+    background-color: #2d56ad; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; 
+
+
+    &:hover {
+        background-color: #1e96db;
+    }
+    
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+.pokebox {
+    border: 1px solid #0ee21f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(8, 126, 223, 0.1);
+    font-size: larger;
+    margin: auto;
+    position: relative; /* Ensure position is relative for the absolute positioning of the light */
+  overflow: hidden; /* Hide overflowing light */
+  border: 1px solid transparent; /* Set initial border color to transparent */
+  animation: lightRotation 4s linear infinite; /* Apply the lightRotation animation */
+
+}
+@keyframes lightRotation {
+    0% {
+      border-color: red blue green purple; /* Initial position */
+    }
+    25% {
+      border-color: red blue purple #0ee21f; /* Move to the right */
+    }
+    50% {
+      border-color: red #0ee21f blue purple; /* Move to the bottom */
+    }
+    75% {
+      border-color: #0ee21f red blue purple; /* Move to the left */
+    }
+    100% {
+      border-color: red blue #0ee21f purple; /* Move to the top */
+    }
+}
