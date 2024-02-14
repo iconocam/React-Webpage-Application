@@ -39,7 +39,7 @@ app.get('/api/pokemonPeople', async (req, res) => {
         res.json(pokemonPeople);
     } catch (error) {
         console.error('Error fetching PokemonPeople:', error);
-        res.status(500).json({ error: 'Internal Server Error' });
+        res.status(500).json({ error: 'Internal Server Error', message: error.message });
     }
 });
 

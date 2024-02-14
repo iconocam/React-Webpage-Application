@@ -3,17 +3,20 @@ import Form from "./Form";
 
 const Home = () => {
     const homeStyle = {
-        backgroundImage: 'url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRhcmslMjBhYnN0cmFjdHxlbnwwfHwwfHx8MA%3D%3D")',
+        backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6Ciiu_qaKH1JpKeYudz1xOKOKgvChEYGEg&usqp=CAU")',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: '100vh',
-
+        textAlign: 'center'
     
         }
-    const divStyle = {
-        marginLeft: '20px'
-    }
-    
+        const joinStyle = {
+            marginLeft: '30px'
+        }
+        const buttonStyle= {
+            color: 'blue'
+            
+        }
     return (
         <div style = {homeStyle}>
             
@@ -51,9 +54,15 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="shape"></div>
-                <div className="shadow"></div>
+                {/* <div className="shape"></div>
+                <div className="shadow"></div> */}
             </section>
+
+            <section style={joinStyle}>
+    <h2>Join Our Community</h2>
+    <p>Unlock exclusive content and connect with like-minded travelers.</p>
+    <button style = {buttonStyle}>Connect!</button>
+</section>
         </div>
     )
 

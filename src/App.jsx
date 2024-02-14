@@ -12,6 +12,8 @@ import Mainpage from './components/Mainpage';
 import Register from './components/Register';
 import MongoData from './components/pokemonPeople';
 
+// http://localhost:5173/api/pokemonPeople won't return data
+// Register is not applicable to anything still
 
 function App() {
 

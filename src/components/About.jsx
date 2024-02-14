@@ -67,7 +67,7 @@ const About = () => {
                             <div className="evolution-info">
                             {pokemonData.evolutionChain.chain.species.name.toUpperCase()}
                             {pokemonData.evolutionChain.chain.evolves_to.length > 0 && (
-            <div>
+                <div>
                 <h4>Evolves To:</h4>
 
                 {pokemonData.evolutionChain.chain.evolves_to.map((evolution, index) => (

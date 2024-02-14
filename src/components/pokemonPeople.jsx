@@ -6,7 +6,7 @@ const pokemonPeople = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5173/api/pokemonPeople');
+                const response = await fetch('http://localhost:5173/api/PokemonPeople');
                 const data = await response.json();
                 setPokemonPeople(data);
             } catch (error) {
